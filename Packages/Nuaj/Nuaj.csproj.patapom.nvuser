@@ -1,0 +1,13 @@
+﻿<ProjectSettingsModel DefinitionId="a218e900-1199-4ab1-a767-7976786f04d4" DisplayName="Nexus Project User Settings" xmlns="clr-namespace:Ark.PropertyModel;assembly=Ark">
+    <SettingsPointModel DefinitionId="3eb7ba04-016d-475e-b0ff-daa5f0e59a08" DisplayName="Launch">
+        <Property Name="ExternalStartProgram" Value="E:\[Workspaces]\Current Project\Nuaj\Runtime\DemoClouds2.exe" />
+        <Property Name="LaunchAction" Value="StartExternalProgram" />
+        <Property Name="WorkingDirectory" Value="E:\[Workspaces]\Current Project\Nuaj\Runtime\" />
+    </SettingsPointModel>
+    <SettingsPointModel DefinitionId="9e01db22-a7ae-4ca9-b2a8-6a4e66dd5cb7" DisplayName="Synchronization">
+        <Property Name="SynchronizeFiles" Value="False" />
+    </SettingsPointModel>
+    <SettingsPointModel DefinitionId="4ae4108e-96a4-491d-99d1-3697cd027eb7" DisplayName="Shader Compilation">
+        <Property Name="GlobalIncludes" Value="FX" />
+    </SettingsPointModel>
+</ProjectSettingsModel>

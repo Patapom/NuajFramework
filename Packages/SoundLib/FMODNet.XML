@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FMODNet</name>
+    </assembly>
+    <members>
+        <member name="T:FMODNet.DSP">
+            <summary>
+            Base class used to manipulate dsp objects into the sound subsystem
+            </summary>
+        </member>
+        <member name="M:FMODNet.DSP.loadParameters">
+            <summary>
+            Method called when the dsps is created. This method will populated the Settings properties
+            </summary>
+        </member>
+        <member name="F:FMODNet.DSP.device">
+            <summary>
+            Current Sound device
+            </summary>
+        </member>
+        <member name="M:FMODNet.DSP.#ctor(FMODNet.SoundDevice)">
+            <summary>
+            Creates a new instance of an DSP object
+            </summary>
+            <param name="device"></param>
+        </member>
+        <member name="M:FMODNet.DSP.CreateSetting">
+            <summary>
+            Create a new DSP setting
+            </summary>
+            <returns>returns a new instance of DSPSetting object</returns>
+        </member>
+        <member name="P:FMODNet.DSP.Settings">
+            <summary>
+            List containing the available settings for specified dsp
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSP.Name">
+            <summary>
+            The name of dsp object
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSP.Active">
+            <summary>
+            If set to true, the dsp will be used by the output during audio execution
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSP.Bypass">
+            <summary>
+            If set to true, the dsp will not be used to change the output's audio
+            </summary>
+        </member>
+        <member name="T:FMOD.RESULT">
+            <summary>
+            RESULTS from the FMOD operations
+            </summary>
+        </member>
+        <member name="T:FMODNet.DSPSetting">
+            <summary>
+            Class containing the setting for a dsp object
+            </summary>
+        </member>
+        <member name="F:FMODNet.DSPSetting.device">
+            <summary>
+            The sound device
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSPSetting.Name">
+            <summary>
+            Name of the setting
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSPSetting.MinValue">
+            <summary>
+            gets the minimum value for this setting
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSPSetting.MaxValue">
+            <summary>
+            gets the maximum value for this setting
+            </summary>
+        </member>
+        <member name="P:FMODNet.DSPSetting.CurrentValue">
+            <summary>
+            Gets or sets the current value for this setting
+            </summary>
+        </member>
+        <member name="T:FMODNet.StreamSystem">
+            <summary>
+            Class used to expose stream access to FMOD
+            </summary>
+        </member>
+        <member name="T:FMODNet.FileSystem">
+            <summary>
+            A class that exposes basic functionality to open files in FMOD's sound system
+            </summary>
+        </member>
+        <member name="M:FMODNet.FileSystem.OpenCallback(System.String,System.Int32,System.UInt32@,System.IntPtr@,System.IntPtr@)">
+            <summary>
+            Method to expose Open file feature for FMOD to open file
+            </summary>
+            <param name="name">name or identifier of the file</param>
+            <param name="unicode">if different from zero, open file as unicode</param>
+            <param name="filesize">size of file to be opened</param>
+            <param name="handle">handle of the file</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.FileSystem.CloseCallback(System.IntPtr,System.IntPtr)">
+            <summary>
+            Method for closing file handle
+            </summary>
+            <param name="handle">file's handle</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.FileSystem.ReadCallback(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@,System.IntPtr)">
+            <summary>
+            Method for reading file data
+            </summary>
+            <param name="handle">handle of the file</param>
+            <param name="buffer">pointer that needs to be filled with data</param>
+            <param name="sizebytes">number of bytes to be read</param>
+            <param name="bytesread">number of bytes that the method was capable of read</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.FileSystem.SeekCallback(System.IntPtr,System.Int32,System.IntPtr)">
+            <summary>
+            Method for seek operation in the file handle
+            </summary>
+            <param name="handle">handle of the file</param>
+            <param name="pos">position to be seek'ed</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.FileSystem.GetHandle">
+            <summary>
+            Return a handle that identifies the current File System object
+            </summary>
+            <returns>a unique pointer identifier</returns>
+        </member>
+        <member name="M:FMODNet.FileSystem.Dispose">
+            <summary>
+            Closes all unmanaged resources and free memory
+            </summary>
+        </member>
+        <member name="P:FMODNet.FileSystem.FileDescriptor">
+            <summary>
+            Unique identifier for the file system
+            </summary>
+        </member>
+        <member name="M:FMODNet.StreamSystem.OpenCallback(System.String,System.Int32,System.UInt32@,System.IntPtr@,System.IntPtr@)">
+            <summary>
+            Method to expose Open file feature for FMOD to open file
+            </summary>
+            <param name="name">name or identifier of the file</param>
+            <param name="unicode">if different from zero, open file as unicode</param>
+            <param name="filesize">size of file to be opened</param>
+            <param name="handle">handle of the file</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.StreamSystem.FromStream(System.IO.Stream)">
+            <summary>
+            Create a new Stream System from a managed Stream
+            </summary>
+            <param name="str">Stream containing the audio data</param>
+            <returns>a new instance of StreamSystem</returns>
+        </member>
+        <member name="F:FMODNet.StreamSystem._streams">
+            <summary>
+            static resource used to fool the garbage collector and ensure that fmod will get the resource when it needs
+            </summary>
+        </member>
+        <member name="M:FMODNet.StreamSystem.GetHandle">
+            <summary>
+            Return a handle that identifies the current File System object
+            </summary>
+            <returns>a unique pointer identifier</returns>
+        </member>
+        <member name="M:FMODNet.StreamSystem.GetStream(System.Int32)">
+            <summary>
+            Returns a stream that corresponds to the pointer
+            </summary>
+            <param name="ptr">pointer</param>
+            <returns>returns a stream</returns>
+        </member>
+        <member name="M:FMODNet.StreamSystem.CloseCallback(System.IntPtr,System.IntPtr)">
+            <summary>
+            Method for closing file handle
+            </summary>
+            <param name="handle">file's handle</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.StreamSystem.SeekCallback(System.IntPtr,System.Int32,System.IntPtr)">
+            <summary>
+            Method for seek operation in the file handle
+            </summary>
+            <param name="handle">handle of the file</param>
+            <param name="pos">position to be seek'ed</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.StreamSystem.ReadCallback(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@,System.IntPtr)">
+            <summary>
+            Method for reading file data
+            </summary>
+            <param name="handle">handle of the file</param>
+            <param name="buffer">pointer that needs to be filled with data</param>
+            <param name="sizebytes">number of bytes to be read</param>
+            <param name="bytesread">number of bytes that the method was capable of read</param>
+            <param name="userdata">user custom data</param>
+            <returns>RESULT that FMOD use to ensure the method was called with no errors</returns>
+        </member>
+        <member name="M:FMODNet.StreamSystem.Dispose">
+            <summary>
+            Closes all unmanaged resources and free memory
+            </summary>
+        </member>
+        <member name="T:FMODNet.Action">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FMODNet.Action`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+        </member>
+        <member name="T:FMODNet.Func`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:FMODNet.Func`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FMODNet.SoundDeviceConfiguration">
+            <summary>
+            Class used to configure the SoundDevice object during its initialization
+            </summary>
+        </member>
+        <member name="P:FMODNet.SoundDeviceConfiguration.StreamBufferSize">
+            <summary>
+            The buffer size used for read operations
+            </summary>
+        </member>
+        <member name="P:FMODNet.SoundDeviceConfiguration.MaximumAllowedSounds">
+            <summary>
+            Maximum number of simultaneous sound objects
+            </summary>
+        </member>
+        <member name="P:FMODNet.SoundDeviceConfiguration.DspBufferSize">
+            <summary>
+            Size of DSP input buffer size.
+            </summary>
+            <remarks>Setting the value to higher size tends to delay the dsp's output</remarks>
+        </member>
+        <member name="P:FMODNet.SoundDeviceConfiguration.DspBufferCount">
+            <summary>
+            Number of buffers stored ahead the playing
+            </summary>
+        </member>
+        <member name="P:FMODNet.SoundDeviceConfiguration.DebugMode">
+            <summary>
+            If debug mode set to true, usage statistics are printed in Trace output
+            </summary>
+        </member>
+        <member name="T:FMODNet.SoundDevice">
+            <summary>
+            Specifies a sound system object from wich its possible to create sound objects. Its the main object from wich everything starts
+            </summary>
+        </member>
+        <member name="M:FMODNet.SoundDevice.CreateSound(System.String)">
+            <summary>
+            Creates a Sound object using current filename
+            </summary>
+            <param name="filename">The file or url containing the media file</param>
+            <returns>returns a new Sound object</returns>
+        </member>
+        <member name="M:FMODNet.SoundDevice.CreateSound(System.IO.Stream)">
+            <summary>
+            Creates a new Sound object using current media stream
+            </summary>
+            <param name="musicStream">The Stream containing the audio data</param>
+            <returns>returns a new Sound object</returns>
+        </member>
+        <member name="M:FMODNet.SoundDevice.CreateSound(FMODNet.FileSystem)">
+            <summary>
+            Creates a new Sound object using the filesystem provided in the constructor
+            </summary>
+            <param name="fileSystem">The filesystem object that contains method to open, close, seek and read operations</param>
+            <returns>returns a new Sound object</returns>
+        </member>
+        <member name="M:FMODNet.SoundDevice.#ctor">
+            <summary>
+            Creates a new instance of Sound Device
+            </summary>
+        </member>
+        <member name="M:FMODNet.SoundDevice.Initialize(FMODNet.SoundDeviceConfiguration)">
+            <summary>
+            Initializes the SoundDevice object with the defined configuration
+            </summary>
+            <param name="configuration">The configuration object containing the configuration data</param>
+        </member>
+        <member name="M:FMODNet.SoundDevice.Initialize">
+            <summary>
+            Initializes the sound subsystem with the default configuration
+            </summary>
+        </member>
+        <member name="M:FMODNet.SoundDevice.Dispose">
+            <summary>
+            Closes the specified sound device
+            </summary>
+        </member>
+        <member name="M:FMODNet.SoundDevice.Queue(FMODNet.Action)">
+            <summary>
+            Queue an action that will be executed by the current's device thread
+            </summary>
+            <param name="method">Method or operation to be executed</param>
+        </member>
+        <member name="M:FMODNet.SoundDevice.Queue(FMODNet.Action{FMOD.System})">
+            <summary>
+            Queues an action that will be executed by the current's device thread
+            </summary>
+            <param name="method">Method or operation to be executed</param>
+        </member>
+        <member name="T:FMODNet.FMODException">
+            <summary>
+            Specialized Exception that raises when a FMOD give something different than FMOD.RESULT.OK
+            </summary>
+        </member>
+        <member name="M:FMODNet.FMODException.#ctor(System.String)">
+            <summary>
+            Initializes a new Instance of FMOException
+            </summary>
+            <param name="msg">Message containing detailed error description</param>
+        </member>
+        <member name="T:FMODNet.DSPBase">
+            <summary>
+            Base class used to create DSP objects.
+            </summary>
+            <remarks>Unlike the abstract class DSP, it provides some methods that the sound device will call eventually while the audio is playing</remarks>
+        </member>
+        <member name="M:FMODNet.DSPBase.#ctor(FMODNet.SoundDevice)">
+            <summary>
+            Passes the sound object to the base class
+            </summary>
+            <param name="device">Instance of the sound device</param>
+        </member>
+        <member name="M:FMODNet.DSPBase.OnRead(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.UInt32)">
+            <summary>
+            Reading and output manipulating callback. The sound device will call this method while the audio is playing.
+            The default operation is to copy the input into the output with no changes in the data.
+            </summary>
+            <param name="input">Pointer that contains the input data</param>
+            <param name="output">Pointer that contains the output data</param>
+            <param name="inChannels">Number of channels in the input</param>
+            <param name="outChannels">Number of channels to output</param>
+            <param name="length">The length (per channel) that the pointer contains</param>
+            <returns>returns a enum value containing the result of operation.</returns>
+        </member>
+        <member name="M:FMODNet.DSPBase.Enqueue(FMODNet.Action,System.Boolean)">
+            <summary>
+            Enqueues a new operation to be called as soon as possible
+            </summary>
+            <param name="action">The method or operation to be executed</param>
+            <param name="async">Set the async mode of the action. If set to false, the method will be blocked until the operation is finished the execution</param>
+        </member>
+        <member name="T:FMODNet.Sound">
+            <summary>
+            Class containing implementation for audio playback. 
+            </summary>
+        </member>
+        <member name="M:FMODNet.Sound.AddCallback(System.UInt32,FMODNet.SoundCallback)">
+            <summary>
+            Add a new listener wich will be called when the position is reached during playback. After called it is removed from the pool
+            </summary>
+            <param name="position">Sound position in ms</param>
+            <param name="callback">The method to be called when the position is reached</param>
+        </member>
+        <member name="M:FMODNet.Sound.GetTagValue(System.String)">
+            <summary>
+            Returns the Tag value (using ID3 tags or wma tags)
+            </summary>
+            <param name="tagName">Tag to be read</param>
+            <returns>returns a string containing the tag value</returns>
+        </member>
+        <member name="M:FMODNet.Sound.GetAllTags">
+            <summary>
+            Reads the audio data and returns all tags found
+            </summary>
+            <returns>Returns a string array containing all tags found in the audio data.</returns>
+        </member>
+        <member name="M:FMODNet.Sound.Finalize">
+            <summary>
+            Stop the audio and closes all resources
+            </summary>
+        </member>
+        <member name="M:FMODNet.Sound.Play">
+            <summary>
+            Plays the specified audio in the sound subsystem
+            </summary>
+        </member>
+        <member name="M:FMODNet.Sound.Stop">
+            <summary>
+            Stops and disposes the audio data and its children
+            </summary>
+        </member>
+        <member name="M:FMODNet.Sound.GetDSP(System.String)">
+            <summary>
+            returns all available dsps containing the specified name
+            </summary>
+            <param name="name">Name to be used in the search</param>
+            <returns>returns an array containing all found dsps</returns>
+        </member>
+        <member name="M:FMODNet.Sound.AddDSP``1(``0)">
+            <summary>
+            Adds a dsp into the Dsp chain
+            </summary>
+            <param name="dsp">Dsp instance to be used</param>
+        </member>
+        <member name="M:FMODNet.Sound.RemoveDSP(FMODNet.DSP)">
+            <summary>
+            Removes and disposes specified dsp from the chain
+            </summary>
+            <param name="dsp">Dsp instance</param>
+        </member>
+        <member name="P:FMODNet.Sound.Channel">
+            <summary>
+            Gets the channel used for this sound to play the audio data.
+            </summary>
+        </member>
+        <member name="P:FMODNet.Sound.Length">
+            <summary>
+            Gets the audio length.
+            </summary>
+        </member>
+        <member name="P:FMODNet.Sound.Name">
+            <summary>
+            Gets or sets the specified name for this sound
+            </summary>
+        </member>
+        <member name="T:FMODNet.SoundCallback">
+            <summary>
+            Delegate used to tell when a syncpoint has reached
+            </summary>
+            <param name="sound">Current sound</param>
+            <param name="positionMs">Position wich the syncpoint was registered</param>
+        </member>
+        <member name="T:FMODNet.Channel">
+            <summary>
+            Represents an audio into the sound subsystem.
+            </summary>
+        </member>
+        <member name="P:FMODNet.Channel.Pan">
+            <summary>
+            Gets or sets the balance value for the specified channel. -1.0f represents left open and right closed. 1.0f represents right open and left close.
+            0.0f represents all sides open.
+            </summary>
+        </member>
+        <member name="P:FMODNet.Channel.Pitch">
+            <summary>
+            Gets or sets the frequency used to play the audio data
+            </summary>
+        </member>
+        <member name="P:FMODNet.Channel.Position">
+            <summary>
+            Gets or sets the position for the audio in ms.
+            </summary>
+        </member>
+        <member name="P:FMODNet.Channel.Volume">
+            <summary>
+            Gets or sets the volume for the audio
+            </summary>
+        </member>
+        <member name="P:FMODNet.Channel.IsPlaying">
+            <summary>
+            Gets the Playing state for the audio data.
+            </summary>
+        </member>
+    </members>
+</doc>
