@@ -92,3 +92,6 @@
 /Packages/SharpMath/Release/*.pdb
 /Packages/SharpMath/*.pdb
 /*.sdf
+/Docs
+/Standalones
+/Runtime/NoiseParticles

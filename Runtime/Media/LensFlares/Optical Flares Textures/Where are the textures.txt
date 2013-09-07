@@ -1,0 +1,5 @@
+Where are the bloody textures ??
+
+Well. They weigh 45Mb so I didn't include them in SVN.
+
+The directories stored here mirror the ones provided with the Video Copilot's "Optical Flares" product (http://www.videocopilot.net/products/opticalflares/) so I advise you to get the plug-in, install it and copy the textures into this directory.
