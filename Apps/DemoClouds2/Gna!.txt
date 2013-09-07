@@ -1,0 +1,17 @@
+* Essayer de trouver une formule où l'on peut spécifier une opacité (100% => 0%) à laquelle s'arrêter
+ en utilisant ma fonction magique exp( -Value * Sigma(x) * Dx )
+  => Si j'y parviens alors ça signifie que je l'ai mon ZBuffer magique que je peux interpoler linéairement !
+  => Il suffirait de le stocker dans une 3ème render target et HOP ! Order-Independent Rendering de tout ! FX, alphas, etc. !
+  => Faire pareil pour la shadow map, il se pourrait même que je n'aie plus besoin de 2 targets
+  => Tracé conditionnel où l'on s'arrête en dessous d'une certaine opacité.
+    -> idem pour nuages en fait...
+
+
+  
+* Remarquons que comme je calcule les nuages avec un Z = max( Z0, Z1, Z2, Z3 ), je calcule toujours ce qui se trouve
+ _derrière_ le décor.
+  => Ca signifie que ce qui va être faux sera le décor lui-même, qui bloque la vue des nuages puisqu'on a spécifié explicitement que les nuages
+   n'intersecteraient pas le décor (à voir pour les sommets, on peut gruger)
+  => Ca veut donc dire qu'il nous suffit juste de recalculer 2 choses :
+   1) Ciel (avec un pas réduit) puisqu'on va toucher le décor "tôt"
+   2) Brouillard

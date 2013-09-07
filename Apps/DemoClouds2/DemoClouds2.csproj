@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8FECC98-D1F1-424B-9624-B25848649AD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>DemoClouds2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\MyFirstDevice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\MyFirstDevice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\MyFirstDevice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\MyFirstDevice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.D3DCompiler.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D10, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.Direct3D10.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.DXGI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SharpDX.Error, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.Error.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\CloudProfilerOutputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CloudProfilerOutputPanel.Designer.cs">
+      <DependentUpon>CloudProfilerOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShadowMapOutputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ShadowMapOutputPanel.Designer.cs">
+      <DependentUpon>ShadowMapOutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloudProfilerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloudProfilerForm.Designer.cs">
+      <DependentUpon>CloudProfilerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoForm.Designer.cs">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OutputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OutputPanel.Designer.cs">
+      <DependentUpon>OutputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenderTechniqueVolumeClouds.cs" />
+    <Compile Include="ShadowMapViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShadowMapViewForm.Designer.cs">
+      <DependentUpon>ShadowMapViewForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CloudProfilerForm.resx">
+      <DependentUpon>CloudProfilerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShadowMapViewForm.resx">
+      <DependentUpon>ShadowMapViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\..\Runtime\FX\Clouds2\3DNoise.fx">
+      <Link>FX\3DNoise.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\AmbientSkySupport.fx">
+      <Link>FX\AmbientSkySupport.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\CloudCompute.fx">
+      <Link>FX\CloudCompute.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\CloudComputeSupport.fx">
+      <Link>FX\CloudComputeSupport.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\CloudRender.fx">
+      <Link>FX\CloudRender.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\CloudSupport.fx">
+      <Link>FX\CloudSupport.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\DownscaleZBuffer.fx">
+      <Link>FX\DownscaleZBuffer.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\GroundDisplay.fx">
+      <Link>FX\GroundDisplay.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\PostProcessToneMapping.fx">
+      <Link>FX\PostProcessToneMapping.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\RenderDeepShadowMap.fx">
+      <Link>FX\RenderDeepShadowMap.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\Clouds2\SkyProbeRender.fx">
+      <Link>FX\SkyProbeRender.fx</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\packednoise_half_16cubed_mips_00.vol" />
+    <None Include="Resources\packednoise_half_16cubed_mips_01.vol" />
+    <None Include="Resources\packednoise_half_16cubed_mips_02.vol" />
+    <None Include="Resources\packednoise_half_16cubed_mips_03.vol" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Packages\AtmosphericLibrary\AtmosphericLibrary.csproj">
+      <Project>{F214E33E-F2E2-4C86-B27A-8AB8BC2373EE}</Project>
+      <Name>AtmosphericLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\Cirrus.Atmosphere\Cirrus.Atmosphere.csproj">
+      <Project>{72202F9B-35F1-4AA2-9FF1-463716023C18}</Project>
+      <Name>Cirrus.Atmosphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\Cirrus.Utility\Cirrus.Utility.csproj">
+      <Project>{9A67863F-D886-41A5-A8D1-04BA1379B097}</Project>
+      <Name>Cirrus.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\Cirrus\Cirrus.csproj">
+      <Project>{1538EF63-74BE-471F-92FB-53F004407CE5}</Project>
+      <Name>Cirrus %28Packages\Cirrus%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\FBXSceneLoader\FBXSceneLoader.csproj">
+      <Project>{D0CC5DC0-D81A-4976-9042-8A3B5427148B}</Project>
+      <Name>FBXSceneLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\Nuaj\Nuaj.csproj">
+      <Project>{67EEDEC2-CE92-4842-8F75-AC34FF82C861}</Project>
+      <Name>Nuaj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\SharpMath\SharpMath.csproj">
+      <Project>{DD026A89-C5FE-4150-BC85-A660E427826A}</Project>
+      <Name>SharpMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\SphericalHarmonicsLibrary\SphericalHarmonicsLibrary.csproj">
+      <Project>{E96E2072-C7EF-46BB-A3F1-8CF6B26BF019}</Project>
+      <Name>SphericalHarmonicsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
