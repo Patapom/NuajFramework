@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+<Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EngineRevision>18417</EngineRevision>
+  <Resources>
+    <Resource>
+      <LocalName>bigleafmaplebark</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[BigLeafMapleBark.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>bigleafmaplebark_normal</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[BigLeafMapleBark_Normal.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>englishoakbark</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[englishoakbark.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>englishoakbark_normal</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[EnglishOakBark_Normal.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>sm_l22_karlowate_09</LocalName>
+      <Properties xsi:type="MeshSharedImport">
+        <Materials>
+          <Items>
+            <Item xsi:type="MaterialOverride">
+              <Material>
+                <BlendMode value="BLEND_OPAQUE" />
+                <UseAO value="False" />
+                <ShaderSource rid="engine_shaders_fast~s_basic_d_n" />
+                <SharedVSConstants>
+                  <Items />
+                </SharedVSConstants>
+                <SharedPSConstants>
+                  <Items>
+                    <Item xsi:type="PropertyPointer">
+                      <Value xsi:type="PSTexture2D">
+                        <Name value="textureDiffuse" />
+                        <Texture rid="spt_l12~t_l22_karlowate_d" />
+                        <Sampler rid="" />
+                      </Value>
+                    </Item>
+                    <Item xsi:type="PropertyPointer">
+                      <Value xsi:type="PSTexture2D">
+                        <Name value="textureNormal" />
+                        <Texture rid="spt_l12~t_l22_karlowate_n" />
+                        <Sampler rid="" />
+                      </Value>
+                    </Item>
+                    <Item xsi:type="PropertyPointer">
+                      <Value xsi:type="PSTexture2D">
+                        <Name value="textureEmissive" />
+                        <Texture rid="engine_textures_default~black_tex" />
+                        <Sampler rid="" />
+                      </Value>
+                    </Item>
+                    <Item xsi:type="PropertyPointer">
+                      <Value xsi:type="PSTexture2D">
+                        <Name value="textureSpecular" />
+                        <Texture rid="engine_textures_default~white_tex" />
+                        <Sampler rid="" />
+                      </Value>
+                    </Item>
+                    <Item xsi:type="PropertyPointer">
+                      <Value xsi:type="PSVector">
+                        <Vector value="2; 2; 2; 1" />
+                        <Name value="specularPower" />
+                      </Value>
+                    </Item>
+                  </Items>
+                </SharedPSConstants>
+                <DefaultInstancedVSConstants>
+                  <Items>
+                    <Item xsi:type="PropertyPointer">
+                      <Value xsi:type="VSObjectWorld">
+                        <MatrixMode value="MATRIX_DEFAULT" />
+                      </Value>
+                    </Item>
+                  </Items>
+                </DefaultInstancedVSConstants>
+                <DefaultInstancedPSConstants>
+                  <Items />
+                </DefaultInstancedPSConstants>
+              </Material>
+              <Override rid="" />
+            </Item>
+          </Items>
+        </Materials>
+        <GeometryImport>
+          <Path value="geometry" />
+          <NoCompression value="False" />
+        </GeometryImport>
+        <StaticDesc>
+          <ActorGroup value="DEFAULT" />
+          <Shapes>
+            <Items>
+              <Item xsi:type="PropertyPointer">
+                <Value xsi:type="PhysicsGenericShapeDesc">
+                  <Material rid="" />
+                  <CollisionGroup value="DEFAULT" />
+                  <LocalTransform value="1;0;0;0;1;0;0;0;1;0;0;0" />
+                  <TriggerFlags value="" />
+                  <Mesh rid="spt_l12~sm_l22_karlowate_09" />
+                  <Index value="0" />
+                </Value>
+              </Item>
+            </Items>
+          </Shapes>
+          <ShapesHD>
+            <Items />
+          </ShapesHD>
+        </StaticDesc>
+        <DynamicDesc>
+          <ActorGroup value="DEFAULT" />
+          <Shapes>
+            <Items>
+              <Item xsi:type="PropertyPointer">
+                <Value xsi:type="PhysicsGenericShapeDesc">
+                  <Material rid="" />
+                  <CollisionGroup value="DEFAULT" />
+                  <LocalTransform value="1;0;0;0;1;0;0;0;1;0;0;0" />
+                  <TriggerFlags value="" />
+                  <Mesh rid="spt_l12~sm_l22_karlowate_09" />
+                  <Index value="0" />
+                </Value>
+              </Item>
+            </Items>
+          </Shapes>
+          <ShapesHD>
+            <Items />
+          </ShapesHD>
+          <Behaviour value="FULLY_DYNAMIC" />
+          <GravityEnabled value="True" />
+          <Mass value="1" />
+          <LinearDamping value="0" />
+          <AngularDamping value="0.05" />
+          <DominanceGroup value="0" />
+        </DynamicDesc>
+        <TriangleGeometryArray>
+          <Items>
+            <Item xsi:type="PhysicsTriangleMesh">
+              <GeometryImport>
+                <Path value="triangle0" />
+                <NoCompression value="False" />
+              </GeometryImport>
+            </Item>
+          </Items>
+        </TriangleGeometryArray>
+        <ConvexGeometryArray>
+          <Items>
+            <Item xsi:type="PhysicsConvexHull">
+              <GeometryImport>
+                <Path value="convex0" />
+                <NoCompression value="False" />
+              </GeometryImport>
+            </Item>
+          </Items>
+        </ConvexGeometryArray>
+        <PriorityGroup rid="" />
+        <AABoxMin value="-0.007471588;-0.131963;-0.05061927" />
+        <AABoxMax value="0.14605;0.015292;0.1188578" />
+      </Properties>
+      <AssetCompiler xmlcrc="-1737784132">
+        <Property name="SourceFile"><![CDATA[sm_l22_karlowate_09.fbx]]></Property>
+        <Property name="CollisionMesh"><![CDATA[NONE]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>t_compositemap_diffuse</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[T_CompositeMap_Diffuse.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>t_compositemap_diffuse_billboards</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[T_CompositeMap_Diffuse_Billboards.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>t_compositemap_normal</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[T_CompositeMap_Normal.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>t_compositemap_normal_billboards</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[T_CompositeMap_Normal_Billboards.dds]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>t_l22_karlowate_d</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[T_L22_karlowate_D.tga]]></Property>
+        <Property name="Compression"><![CDATA[BC1_format_DXT1]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>t_l22_karlowate_n</LocalName>
+      <Properties xsi:type="Texture2D">
+        <TextureImport>
+          <Path value="" />
+          <NoCompression value="False" />
+        </TextureImport>
+        <Lockable value="False" />
+        <HiResTextureImport>
+          <Path value="hires" />
+          <NoCompression value="False" />
+        </HiResTextureImport>
+        <PriorityGroup rid="" />
+      </Properties>
+      <AssetCompiler>
+        <Property name="SourceFile"><![CDATA[T_L22_karlowate_N.tga]]></Property>
+        <Property name="Compression"><![CDATA[BC1_format_DXT1]]></Property>
+      </AssetCompiler>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l22_drzewo_04</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l22_drzewo_04.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l22_drzewo_05</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l22_drzewo_05.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l22_drzewo_06</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l22_drzewo_06.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l22_karlowate_03</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l22_karlowate_03.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l22_karlowate_12</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l22_karlowate_12.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_drz_grube01</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_drz_grube01.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_drzewko_02</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_drzewko_02.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_drzewo_01</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_drzewo_01.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_drzewo_05</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_drzewo_05.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_drzewo_07</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_drzewo_07.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~englishoakbark" />
+            <Item xsi:type="HLoad" rid="spt_l12~englishoakbark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_krzak_01</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_krzak_01.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~englishoakbark" />
+            <Item xsi:type="HLoad" rid="spt_l12~englishoakbark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+    <Resource>
+      <LocalName>ts_l25_krzak_04</LocalName>
+      <Properties xsi:type="TreeShared">
+        <TreeImport>
+          <Path value="l25_krzak_04.spt" />
+          <NoCompression value="False" />
+        </TreeImport>
+        <BranchTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark" />
+            <Item xsi:type="HLoad" rid="spt_l12~bigleafmaplebark_normal" />
+            <Item xsi:type="HLoad" rid="engine_textures_default~t_transparency_full_16x16_do" />
+          </Items>
+        </BranchTextures>
+        <CompositeTextures>
+          <Items>
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal" />
+            <Item xsi:type="HLoad" rid="" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_diffuse_billboards" />
+            <Item xsi:type="HLoad" rid="spt_l12~t_compositemap_normal_billboards" />
+          </Items>
+        </CompositeTextures>
+        <SpeedTreeShaders>
+          <Items>
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_branch" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_frond" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafcard" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_leafmesh" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs0" />
+            <Item xsi:type="HLoad" rid="engine_shaders_speedtree~s_billboard_vs1" />
+          </Items>
+        </SpeedTreeShaders>
+        <SpeedTreeNearLod value="0" />
+        <SpeedTreeFarLod value="80" />
+        <SpeedTreeBillboadFade value="0.7" />
+      </Properties>
+    </Resource>
+  </Resources>
+  <Level IsLevel="False" />
+</Package>

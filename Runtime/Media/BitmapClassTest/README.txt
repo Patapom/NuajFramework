@@ -1,0 +1,1 @@
+These files are here to demonstrate all the possible supported formats in the Nuaj.Bitmap class
