@@ -1,0 +1,33 @@
+<ROOT>
+  <Project>
+    <Music />
+  </Project>
+  <UI>
+    <TimeLine VisibleBoundMin="0" VisibleBoundMax="158.7806" CursorPosition="0" />
+    <TrackData>
+      <Track Name="LightPosition" AnimationTrackVisible="False" AnimEditorMinSize="265" ShowTangents="False" GradientTrackVisible="False" TrackColorR="250" TrackColorG="50" TrackColorB="100">
+        <AnimationRange VerticalRangeMin="-0.9479246" VerticalRangeMax="1.152076" />
+      </Track>
+      <Track Name="Light Intensity" AnimationTrackVisible="True" AnimEditorMinSize="265" ShowTangents="False" GradientTrackVisible="False" TrackColorR="100" TrackColorG="250" TrackColorB="250">
+        <AnimationRange VerticalRangeMin="-0.2221882" VerticalRangeMax="0.6684459" />
+      </Track>
+      <Track Name="Flash" AnimationTrackVisible="False" AnimEditorMinSize="150" ShowTangents="False" GradientTrackVisible="False" TrackColorR="200" TrackColorG="100" TrackColorB="100">
+        <AnimationRange VerticalRangeMin="-0.7247274" VerticalRangeMax="2.349838" />
+      </Track>
+      <Track Name="RoomPRS" AnimationTrackVisible="False" AnimEditorMinSize="150" ShowTangents="False" GradientTrackVisible="False" TrackColorR="50" TrackColorG="100" TrackColorB="250">
+        <AnimationRange VerticalRangeMin="-0.296" VerticalRangeMax="1.804" />
+      </Track>
+      <Track Name="Colorimetry Highlights" AnimationTrackVisible="False" AnimEditorMinSize="265" ShowTangents="False" GradientTrackVisible="True" TrackColorR="200" TrackColorG="150" TrackColorB="200">
+        <AnimationRange VerticalRangeMin="-0.1" VerticalRangeMax="2" />
+      </Track>
+      <Track Name="Colorimetry Midtones" AnimationTrackVisible="False" AnimEditorMinSize="265" ShowTangents="False" GradientTrackVisible="True" TrackColorR="200" TrackColorG="150" TrackColorB="100">
+        <AnimationRange VerticalRangeMin="-0.1" VerticalRangeMax="2" />
+      </Track>
+      <Track Name="Colorimetry Shadows" AnimationTrackVisible="False" AnimEditorMinSize="265" ShowTangents="False" GradientTrackVisible="True" TrackColorR="150" TrackColorG="100" TrackColorB="100">
+        <AnimationRange VerticalRangeMin="-0.1" VerticalRangeMax="2" />
+      </Track>
+    </TrackData>
+    <FileDialogs OpenProjectLastPath="E:\[Workspaces]\Current Project\Nuaj\Runtime" OpenMusicLastPath="E:\[Workspaces]\Current Project\Nuaj\Runtime" SaveProjectLastPath="E:\[Workspaces]\Current Project\Nuaj\Runtime" SaveBinaryLastPath="E:\[Workspaces]\Current Project\Nuaj\Runtime" />
+  </UI>
+  <Sequence><![CDATA[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]]></Sequence>
+</ROOT>

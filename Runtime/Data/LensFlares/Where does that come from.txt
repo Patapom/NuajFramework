@@ -1,0 +1,5 @@
+These lens-flare files were created using  Video Copilot's "Optical Flares" product (http://www.videocopilot.net/products/opticalflares/).
+It's an exact copy of the "Optical Flares Presets" directory.
+
+Some of these presets use the textures located in the "Media/LensFlares/Optical Flares Textures" directory that are NOT present in the SVN repository for reasons of space.
+It's advised you download the plug-in and copy the textures there yourself.
