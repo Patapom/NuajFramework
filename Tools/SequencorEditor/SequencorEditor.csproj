@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10D7C70B-5F41-4F7E-96B7-4C790D88459E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SequencorEditor</RootNamespace>
+    <AssemblyName>SequencorEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Sequencor.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Sequencor.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\SequencorEditor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\SequencorEditor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base64.cs" />
+    <Compile Include="CollectionsOperations.cs" />
+    <Compile Include="Controls\Animation Editor\AnimationEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Animation Editor\AnimationEditorControl.designer.cs">
+      <DependentUpon>AnimationEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Animation Editor\AnimationTrackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Animation Editor\AnimationTrackPanel.designer.cs">
+      <DependentUpon>AnimationTrackPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Animation Editor\GradientTrackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Animation Editor\GradientTrackPanel.Designer.cs">
+      <DependentUpon>GradientTrackPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\AdobeColors.cs" />
+    <Compile Include="Controls\ColorPicker\ColorBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\GradientFloatTrackbarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\GradientFloatTrackbarControl.designer.cs">
+      <DependentUpon>GradientFloatTrackbarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\HorizontalAlphaSliderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\PaletteButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\PaletteButton.designer.cs">
+      <DependentUpon>PaletteButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\VerticalColorSliderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelFastPaint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelFastPaint.Designer.cs">
+      <DependentUpon>PanelFastPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FoldableTrackControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FoldableTrackControl.Designer.cs">
+      <DependentUpon>FoldableTrackControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PanelNoMouseWheel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelNoMouseWheel.Designer.cs">
+      <DependentUpon>PanelNoMouseWheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Time Line\CursorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Track Bars\FloatTrackbarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Track Bars\FloatTrackbarControl.designer.cs">
+      <DependentUpon>FloatTrackbarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Track Bars\IntegerTrackbarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Track Bars\IntegerTrackbarControl.designer.cs">
+      <DependentUpon>IntegerTrackbarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Time Line\TimeLineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Time Line\TimeLineControl.designer.cs">
+      <DependentUpon>TimeLineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Time Line\GraduationPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SequencerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SequencerControl.designer.cs">
+      <DependentUpon>SequencerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Track Editor\TrackControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Track Editor\TrackControl.designer.cs">
+      <DependentUpon>TrackControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Track Editor\TrackIntervalPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Track Editor\TrackIntervalPanel.designer.cs">
+      <DependentUpon>TrackIntervalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ColorPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ColorPickerForm.designer.cs">
+      <DependentUpon>ColorPickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeyEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyEditorForm.Designer.cs">
+      <DependentUpon>KeyEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetTimeForm.Designer.cs">
+      <DependentUpon>SetTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParameterForm.Designer.cs">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SequencerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SequencerForm.Designer.cs">
+      <DependentUpon>SequencerForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Animation Editor\AnimationEditorControl.resx">
+      <DependentUpon>AnimationEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Animation Editor\AnimationTrackPanel.resx">
+      <DependentUpon>AnimationTrackPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Animation Editor\GradientTrackPanel.resx">
+      <DependentUpon>GradientTrackPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPicker\ColorBoxControl.resx">
+      <DependentUpon>ColorBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPicker\GradientFloatTrackbarControl.resx">
+      <DependentUpon>GradientFloatTrackbarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPicker\HDRColorPickerForm.resx" />
+    <EmbeddedResource Include="Controls\ColorPicker\HorizontalAlphaSliderControl.resx">
+      <DependentUpon>HorizontalAlphaSliderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPicker\PaletteButton.resx">
+      <DependentUpon>PaletteButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPicker\VerticalColorSliderControl.resx">
+      <DependentUpon>VerticalColorSliderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PanelFastPaint.resx">
+      <DependentUpon>PanelFastPaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FoldableTrackControl.resx">
+      <DependentUpon>FoldableTrackControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PanelNoMouseWheel.resx">
+      <DependentUpon>PanelNoMouseWheel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Track Bars\FloatTrackbarControl.resx">
+      <DependentUpon>FloatTrackbarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Track Bars\IntegerTrackbarControl.resx">
+      <DependentUpon>IntegerTrackbarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Time Line\TimeLineControl.resx">
+      <DependentUpon>TimeLineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Time Line\GraduationPanel.resx">
+      <DependentUpon>GraduationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SequencerControl.resx">
+      <DependentUpon>SequencerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Track Editor\TrackControl.resx">
+      <DependentUpon>TrackControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Track Editor\TrackIntervalPanel.resx">
+      <DependentUpon>TrackIntervalPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorPickerForm.resx">
+      <DependentUpon>ColorPickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyEditorForm.resx">
+      <DependentUpon>KeyEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetTimeForm.resx">
+      <DependentUpon>SetTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParameterForm.resx">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SequencerForm.resx">
+      <DependentUpon>SequencerForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Packages\Sequencor\Sequencor.csproj">
+      <Project>{2E1FCC0F-9CA4-4075-AEC8-B53141E2DAB6}</Project>
+      <Name>Sequencor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\SoundLib\SoundLib.csproj">
+      <Project>{CA626C55-8882-482B-85B7-8C36DDF6F9DD}</Project>
+      <Name>SoundLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inputs Separator - Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inputs Separator - Middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inputs Separator - Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Editor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaterialInstance Editor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalizeVector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenPropertyBrowser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Property Indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectInResourceBrowser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectInViewport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SequenceEnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SequenceInfinity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowVisualHelpers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tool - Position.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tool - Rotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tool - Scale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Enabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Pause .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Play .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - PlayOnce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Track - Zoom Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trackbar - Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trackbar - Middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trackbar - Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variant - Constant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variant - Curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variant - Eval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variant - Random.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VFXEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeySelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unfold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyedropper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyedropper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tangent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_Alpha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeySelected_Alpha.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00910555-2E12-47EC-BC04-0C8C3368C610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VolumeMeshBuilder</RootNamespace>
+    <AssemblyName>VolumeMeshBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Runtime\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cirrus.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="SharpDX">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D10">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.Direct3D10.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Error">
+      <HintPath>..\..\External\SharpDX\Bin\SharpDX.Error.dll</HintPath>
+    </Reference>
+    <Reference Include="SphericalHarmonicsLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RenderTechniqueScene.cs" />
+    <Compile Include="VolumeMeshForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolumeMeshForm.Designer.cs">
+      <DependentUpon>VolumeMeshForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VolumeMeshForm.resx">
+      <DependentUpon>VolumeMeshForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\..\Runtime\FX\VolumeMeshBuilder\BuildDistanceField.fx">
+      <Link>FX\BuildDistanceField.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\VolumeMeshBuilder\ProcessSlices.fx">
+      <Link>FX\ProcessSlices.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\VolumeMeshBuilder\RenderVolumeMeshRayMarching.fx">
+      <Link>FX\RenderVolumeMeshRayMarching.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\VolumeMeshBuilder\RenderVolumeMeshSlices.fx">
+      <Link>FX\RenderVolumeMeshSlices.fx</Link>
+    </None>
+    <None Include="..\..\Runtime\FX\VolumeMeshBuilder\SceneRendering.fx">
+      <Link>FX\SceneRendering.fx</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Packages\Cirrus\Cirrus.csproj">
+      <Project>{1538EF63-74BE-471F-92FB-53F004407CE5}</Project>
+      <Name>Cirrus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\FBXImporterManaged\FBXImporterManaged.vcxproj">
+      <Project>{B565481B-96F6-4DBB-A6C7-001B3F9D2D14}</Project>
+      <Name>FBXImporterManaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\FBXSceneLoader\FBXSceneLoader.csproj">
+      <Project>{D0CC5DC0-D81A-4976-9042-8A3B5427148B}</Project>
+      <Name>FBXSceneLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\Nuaj\Nuaj.csproj">
+      <Project>{67EEDEC2-CE92-4842-8F75-AC34FF82C861}</Project>
+      <Name>Nuaj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packages\SharpMath\SharpMath.csproj">
+      <Project>{DD026A89-C5FE-4150-BC85-A660E427826A}</Project>
+      <Name>SharpMath</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
